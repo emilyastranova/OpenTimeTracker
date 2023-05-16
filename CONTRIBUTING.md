@@ -21,6 +21,68 @@ To get started with contributing to OpenTimeTracker, follow these steps:
 5. Commit your changes and push them to your forked repository.
 6. Submit a pull request from your branch to the main repository's `main` branch.
 
+## Project Structure
+
+The following is the project structure for OpenTimeTracker:
+
+```shell
+OpenTimeTracker/
+├── backend/
+│   ├── app.py
+│   ├── api/
+│   │   ├── endpoints/
+│   │   │   ├── authentication.py
+│   │   │   ├── time_tracking.py
+│   │   │   └── ... (other API endpoints)
+│   │   └── __init__.py
+│   ├── models/
+│   │   ├── user.py
+│   │   └── ... (other data models)
+│   ├── services/
+│   │   ├── authentication.py
+│   │   └── ... (other backend services)
+│   └── utils/
+│       ├── database.py
+│       └── ... (other utility modules)
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── main.js
+│   ├── package.json
+│   ├── rollup.config.js
+│   └── ... (other frontend configuration files)
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
+Explanation of the project structure:
+
+- `backend/`: Contains the backend code using Python FastAPI.
+  - `app.py`: The entry point for the backend application.
+  - `api/`: Contains the API endpoints.
+  - `models/`: Contains the data models used in the backend.
+  - `services/`: Contains the backend services that handle business logic.
+  - `utils/`: Contains utility modules for the backend.
+- `frontend/`: Contains the frontend code using Svelte.
+  - `public/`: Contains static assets and files served by the frontend.
+  - `src/`: Contains the Svelte source code.
+    - `components/`: Contains reusable Svelte components.
+    - `routes/`: Contains the frontend routes and associated components.
+    - `services/`: Contains frontend services for making API calls or handling other frontend-specific logic.
+    - `main.js`: The entry point for the frontend application.
+  - `package.json`, `rollup.config.js`, and other frontend configuration files.
+- `.gitignore`: Specifies which files and directories should be ignored by version control.
+- `LICENSE`: The license file for your project.
+- `README.md`: The project's readme file providing an overview, instructions, and other important details.
+- `requirements.txt`: Lists the Python dependencies required by the backend.
+
+This layout separates the backend and frontend code into their respective directories, making it easier to maintain and deploy them independently. The backend focuses on the API endpoints, models, services, and utility modules, while the frontend contains components, routes, and services specific to the frontend application.
+
 ## Code Style and Guidelines
 
 To maintain a consistent codebase, please adhere to the following guidelines when making contributions:
