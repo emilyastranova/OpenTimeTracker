@@ -77,6 +77,8 @@ Explanation of the project structure:
     - `main.js`: The entry point for the frontend application.
   - `package.json`, `rollup.config.js`, and other frontend configuration files.
 - `.gitignore`: Specifies which files and directories should be ignored by version control.
+- `CODE_OF_CONDUCT.md`: The code of conduct for the project.
+- `CONTRIBUTING.md`: The contributing guidelines for the project.
 - `LICENSE`: The license file for your project.
 - `README.md`: The project's readme file providing an overview, instructions, and other important details.
 - `requirements.txt`: Lists the Python dependencies required by the backend.
