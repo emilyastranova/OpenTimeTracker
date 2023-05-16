@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-GNU-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)
 
-OpenTimeTracker is a Python Flask-based open-source project designed for efficient time tracking and attendance management. It provides a user-friendly web interface for employees to log their in/out times, track working hours, and view attendance history.
+OpenTimeTracker is a web-based open-source project designed for efficient time tracking and attendance management. It provides a user-friendly web interface for employees to log their in/out times, track working hours, and view attendance history.
 
 ## Features
 
@@ -51,6 +51,6 @@ This project is licensed under the GNU General Public License v3.0. For more inf
 
 ## Acknowledgements
 
-- [Python Flask](https://flask.palletsprojects.com/)
+- [Python FastAPI](https://fastapi.tiangolo.com/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
