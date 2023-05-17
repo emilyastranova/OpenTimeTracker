@@ -41,6 +41,23 @@ OpenTimeTracker is a web-based open-source project designed for efficient time t
 
 4. Access OpenTimeTracker in your browser at `http://localhost:5000`.
 
+## Features/Roadmap
+
+- [ ] Basic functionality
+   - [ ] FastAPI Backend
+      - [ ] Main logic (time punching, CRUD operations, etc.)
+      - [ ] Database connector
+   - [ ] Database
+      - [ ] Database design
+      - [ ] Docker Compose config
+   - [ ] Svelte Frontend
+- [ ] Webhooks
+- [ ] Single Sign-On (SAML/OpenID) authentication
+- [ ] Exporting data (CSV, Excel, JSON, etc.)
+- [ ] Importing existing data from popular applications
+- [ ] REST API
+- [ ] Prometheus exporter
+
 ## Contributing
 
 Contributions are welcome! Please refer to the [Contribution Guidelines](CONTRIBUTING.md) for more details.
@@ -51,6 +68,7 @@ This project is licensed under the GNU General Public License v3.0. For more inf
 
 ## Acknowledgements
 
+- [Svelte/SvelteKit](https://svelte.dev/)
 - [Python FastAPI](https://fastapi.tiangolo.com/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
