@@ -86,6 +86,38 @@ Explanation of the project structure:
 
 This layout separates the backend and frontend code into their respective directories, making it easier to maintain and deploy them independently. The backend focuses on the API endpoints, models, services, and utility modules, while the frontend contains components, routes, and services specific to the frontend application.
 
+## Database Structure
+
+The following is the database structure for OpenTimeTracker:
+
+```shell
+Table: users
++----+--------------+---------------------+
+| id | name         | email               |
++----+--------------+---------------------+
+| 1  | John Doe     | john@example.com    |
+| 2  | Jane Smith   | jane@example.com    |
++----+--------------+---------------------+
+
+Table: tags
++----+-------------------+
+| id | name              |
++----+-------------------+
+| 1  | Babysitting       |
+| 2  | Freelancing       |
+| 3  | Lawnmowing        |
++----+-------------------+
+
+Table: time_entries
++----+---------+---------------------+---------------------+-------------+
+| id | user_id | tag_id          | clock_in            | clock_out   |
++----+---------+---------------------+---------------------+-------------+
+| 1  | 1       | 1                   | 2023-05-01 08:30:00 | 2023-05-01 17:00:00 |
+| 2  | 1       | 2                   | 2023-05-02 09:00:00 | 2023-05-02 18:00:00 |
+| 3  | 2       | 1                   | 2023-05-01 09:30:00 | 2023-05-01 15:30:00 |
++----+---------+---------------------+---------------------+-------------+
+```
+
 ## Code Style and Guidelines
 
 To maintain a consistent codebase, please adhere to the following guidelines when making contributions:

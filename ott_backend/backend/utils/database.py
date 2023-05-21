@@ -65,7 +65,8 @@ class DatabaseConnector:
             list: A list of dummy results retrieved from the database.
         """
         # Dummy implementation
-        results = [(1, "John Doe", "john@example.com"), (2, "Jane Smith", "jane@example.com")]
+        results = [(1, "John Doe", "john@example.com", True, "Working on project A"),
+                    (2, "Jane Doe", "jane@example.com", False, "On leave")]
         return results
 
     def insert(self, table, data):

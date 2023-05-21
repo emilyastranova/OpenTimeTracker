@@ -30,8 +30,9 @@ def get_users():
 
     # Process the query result using the UserModel class
     for row in query_result:
-        user_id, name, email = row
-        user = UserModel(user_id=user_id, name=name, email=email)
+        user_id, name, email, clocked_in, status = row
+        user = UserModel(user_id=user_id, name=name, email=email,
+                        clocked_in=clocked_in, status=status)
 
         # Add the user to the list of users
         users[user_id] = user

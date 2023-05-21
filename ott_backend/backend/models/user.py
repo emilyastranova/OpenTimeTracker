@@ -22,7 +22,7 @@ class UserModel():
         delete(): Deletes the user's data from the database.
     """
 
-    def __init__(self, user_id: int, name: str, email: str):
+    def __init__(self, user_id: int, name: str, email: str, clocked_in: bool, status: str):
         """
         Initializes a new UserModel object.
         
@@ -32,9 +32,11 @@ class UserModel():
             email (str): User email address.
         """
 
-        self.id = user_id
+        self.user_id = user_id
         self.name = name
         self.email = email
+        self.clocked_in = clocked_in
+        self.status = status
 
     def __iter__(self):
         """
