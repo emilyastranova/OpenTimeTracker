@@ -62,13 +62,14 @@ OpenTimeTracker/
 
 Explanation of the project structure:
 
-- `backend/`: Contains the backend code using Python FastAPI.
+- `ott_backend/`: Contains the backend code using Python FastAPI.
   - `app.py`: The entry point for the backend application.
-  - `api/`: Contains the API endpoints.
-  - `models/`: Contains the data models used in the backend.
-  - `services/`: Contains the backend services that handle business logic.
-  - `utils/`: Contains utility modules for the backend.
-- `frontend/`: Contains the frontend code using Svelte.
+  - `backend/`: Contains the backend source code.
+    - `api/`: Contains the API endpoints.
+    - `models/`: Contains the data models used in the backend.
+    - `services/`: Contains the backend services that handle business logic.
+    - `utils/`: Contains utility modules for the backend.
+- `ott_frontend/`: Contains the frontend code using Svelte.
   - `public/`: Contains static assets and files served by the frontend.
   - `src/`: Contains the Svelte source code.
     - `components/`: Contains reusable Svelte components.
