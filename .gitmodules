@@ -1,0 +1,6 @@
+[submodule "opentimetracker-api"]
+	path = opentimetracker-api
+	url = git@github.com:tyleraharrison/opentimetracker-api.git
+[submodule "opentimetracker-web"]
+	path = opentimetracker-web
+	url = git@github.com:tyleraharrison/opentimetracker-web.git

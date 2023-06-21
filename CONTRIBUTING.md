@@ -27,24 +27,25 @@ The following is the project structure for OpenTimeTracker:
 
 ```shell
 OpenTimeTracker/
-├── backend/
-│   ├── app.py
-│   ├── api/
-│   │   ├── endpoints/
-│   │   │   ├── authentication.py
-│   │   │   ├── time_tracking.py
-│   │   │   └── ... (other API endpoints)
-│   │   └── __init__.py
-│   ├── models/
-│   │   ├── user.py
-│   │   └── ... (other data models)
-│   ├── services/
-│   │   ├── authentication.py
-│   │   └── ... (other backend services)
-│   └── utils/
-│       ├── database.py
-│       └── ... (other utility modules)
-├── frontend/
+├── opentimetracker-api/
+|   ├── backend/
+│       ├── app.py
+│       ├── api/
+│       │   ├── endpoints/
+│       │   │   ├── authentication.py
+│       │   │   ├── time_tracking.py
+│       │   │   └── ... (other API endpoints)
+│       │   └── __init__.py
+│       ├── models/
+│       │   ├── user.py
+│       │   └── ... (other data models)
+│       ├── services/
+│       │   ├── authentication.py
+│       │   └── ... (other backend services)
+│       └── utils/
+│           ├── database.py
+│           └── ... (other utility modules)
+├── opentimetracker-web/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/
@@ -55,6 +56,9 @@ OpenTimeTracker/
 │   ├── rollup.config.js
 │   └── ... (other frontend configuration files)
 ├── .gitignore
+├── .gitmodules
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
 └── requirements.txt
